@@ -325,6 +325,7 @@ export default function Home() {
         <Table.Header>
           <Table.Column className='tableOnClick' onClick={() => sortBy('brandName')}>BRAND</Table.Column>
           <Table.Column className='tableOnClick' onClick={() => sortBy('model')}>MODEL</Table.Column>
+          <Table.Column className='tableOnClick' onClick={() => sortBy('ref')}>REF</Table.Column>
           <Table.Column className='tableOnClick' onClick={() => sortBy('condition')}>CONDITION</Table.Column>
           <Table.Column className='tableOnClick' onClick={() => sortBy('year')}>YEAR</Table.Column>
           <Table.Column className='tableOnClick' onClick={() => sortBy('newprice')}>PRICE</Table.Column>
@@ -374,6 +375,7 @@ export default function Home() {
               return <Table.Row key={index}>
               <Table.Cell><a href={i.link} target='_blank'>{i.brandName}</a></Table.Cell>
                   <Table.Cell><a href={i.link} target='_blank'>{i.model}</a></Table.Cell>
+                  <Table.Cell>{i.ref}</Table.Cell>
                   <Table.Cell>{i.condition}</Table.Cell>
                   <Table.Cell>{i.year}</Table.Cell>
                   <Table.Cell>{i.newprice == -1 ? i.newpricetext : '$'+i.newprice}</Table.Cell>
