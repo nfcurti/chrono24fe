@@ -4,7 +4,7 @@ import { Dropdown, Table, Spacer, Checkbox, Radio, Button, Loading } from "@next
 import { useEffect, useState, useMemo } from 'react';
 
 export default function Home() {
-  const url = 'https://chrono24backend.onrender.com'
+  const url = 'https://sociviews.com/chrono'
   // const url = 'http://localhost:3001'
 
   const [isLoading, setIsLoading] = useState(false);
@@ -291,7 +291,7 @@ export default function Home() {
           <Checkbox value="2023">2023</Checkbox>
           <Checkbox value="2022">2022</Checkbox>
           <Checkbox value="2021">2021</Checkbox>
-          <Checkbox value="2021">2020</Checkbox>
+          <Checkbox value="2020">2020</Checkbox>
           <Checkbox value="2019">2019</Checkbox>
           <Checkbox value="2018">2018</Checkbox>
           <Checkbox value="2017">2017</Checkbox>
